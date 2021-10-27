@@ -1,0 +1,199 @@
+---
+title: "Oct. 6"
+output: html_notebook
+---
+
+```{r}
+typeof("John")
+typeof(c("John", "Mary"))
+typeof(list("John", 178, TRUE))
+```
+
+```{r}
+list("John", 5, TRUE) 
+```
+
+```{r}
+list("John",42, list("Mary", 35)) # big list (a nested list)
+```
+
+```{r}
+#Therefore, the above vector has the following three element values:
+"John"
+42
+list("Mary", 35)
+    #You CANNOT say "Mary" is an element value of the big list, since it sits inside another vector.
+```
+
+```{r}
+c("John", "Mary")[[1]]
+c("John", "Mary")[[2]]
+```
+
+```{r}
+list("John", 178, TRUE)[[1]]
+list("John", 178, TRUE)[[2]]
+list("John", 178, TRUE)[[3]]
+```
+
+```{r}
+list("John",42, list("Mary", 35))[[3]]
+```
+
+
+
+##2.9
+
+```{r}
+personName = c("John", "Mary") # binding
+interestingNumber = c(2, 3.1412)
+covidPositive = c(TRUE, TRUE, F)
+personName # call name
+personName <- c("John", "Mary")
+c("John", "Mary") -> personName
+```
+
+```{r}
+
+```
+
+### Chained extraction operations
+
+[[]]
+[]
+$
+
+[,]
+
+```{r}
+bigList <- list("John", 42, list("Mary", 35))
+```
+
+```{r}
+bigList[[3]][[2]]
+```
+
+```{r}
+list("John", 42, list("Mary", 35))[[3]][[2]]
+```
+
+   *
+Resolve First
+```{r}
+list("John", 42, list("Mary", 35))[[3]]
+```
+
+```{r}
+list("Mary", 35)[[2]]
+```
+
+```{r}
+list("John", 42, 
+     list("Mary", 35,
+          c(1, 22, 53)))[[3]][[3]][[2]]
+```
+
+##2.10
+
+```{r}
+list("a", list(1,2), TRUE)
+```
+
+```{r}
+c(c("a", "b"), c("c", "d"))[[2]][[2]]
+```
+
+```{r}
+C("a", "b", "c", "d")[[4]]
+```
+
+```{r}
+list(c("a", "b"), c("c", "d"))[[2]][[2]]
+```
+
+```{r}
+c(list("a", 1), list("c", 2))
+```
+
+```{r}
+c("a", 1, "c", 2)# 1 will be "1"
+```
+
+##2.12
+
+Four features
+
+   * age, gender, residence, income
+
+### Obo
+
+54 male north 100
+
+```{r}
+gender # namecall
+gender = "male" # binding
+```
+
+Value always stay at arrow tale
+
+```{r}
+gender->"male"
+"male" = gender
+```
+
+
+```{r}
+age = 54
+gender = "male"
+residence = "north"
+incomes = 100
+```
+
+```{r}
+A <- list(54, "male", "north", 100)
+B <- list(32, "female", "south", 25)
+C <- list(28, "female", "east", NA) # (3)
+D <- list(20, "male", "east", 77)
+```
+
+   *Not Available
+
+```{r}
+data_set <- list(A, B, C, D)
+```
+
+```{r}
+data_set
+```
+
+```{r}
+c(
+  list(54, "male", "north", 100), # (1)
+  list(32, "female", "south", 25), # (2)
+  list(28, "female", "east", NA), # (3)
+  list(20, "male", "east", 77) # (4)
+) # list will be ignore
+```
+
+regularname
+
+start with 
+. # no number imdiately behind
+a-z
+
+can use
+
+a-z
+0-9
+.
+_
+
+inregular
+plus ``
+ex `.108`
+
+
+
+
+
+
